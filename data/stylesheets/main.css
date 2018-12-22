@@ -1,4 +1,4 @@
-*{
+* {
     margin:0;
     padding:0;
 }
@@ -13,7 +13,10 @@ body.fade {
     transition: none;
 }
 
-section{
+section {
+    background-color: #c7d8d8;
+    min-height: 100vh;
+    position: relative;
     width:100%;
     height:100%;
     float:left;
@@ -23,44 +26,7 @@ section{
   opacity: 1;
 }
 
-#about{
-    background-color: #5EA1FF;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-#projects{
-    background:#5ac458;
-    height: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-}
-
-#resume{
-    background:#c055db;
-    height: 100%;
-    position: absolute;
-    top: 200%;
-    left: 0;
-    width: 100%;
-}
-
-#contact{
-    background:#ad82ff;
-    height: 100%;
-    position: absolute;
-    top: 300%;
-    left: 0;
-    width: 100%;
-}
-
-
-nav{
+nav {
     display:inline-block;
     width:100%;
     position:fixed;
@@ -68,52 +34,63 @@ nav{
     top:30px;
     text-align: right;
     font-size: 1vw;
+    font-family: 'Roboto';
 }
 
-ul{
+ul {
     display:inline-block;
     margin-right:30px;
     width:fit-content;
     list-style:none;
 }
 
-ul li{
+ul li {
     display:inline-block;
     margin-right:30px;
 }
 
-ul li a{
-    color:#fff;
+ul li a {
+    color:#393d3d;
     text-decoration:none;
-    opacity: .6;
+    opacity: .9;
 }
 
-ul li:hover > a{
-    color:#000000;
+ul li:hover > a {
+    color:#008B8B;
     text-decoration:underline;
     opacity: 1;
 }
 
-h1{
-    color:#fff;
+h1 {
+    color:#393d3d;
     text-align: center;
-    margin-top:80px; font-size: 3vw;
-    font-family: "Courier New", Courier, monospace;
+    margin-top:80px;
+    font-size: 4vw;
+    font-family: "Roboto";
 }
-h2{
+h2 {
     color:#fff;
     text-align: center;
     font-size: 2vw;
 }
 
-#profilePic {
-    display: flex;
-    flex-wrap: nowrap;
+/* images */
+.picture img {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
+.contactIcon {
+    display: inline-block;
+    width: 3%;
+}
+
+#icons{
+    text-align: center;
+    padding-top: 30%;
+}
 
 /* The following section is dedicated to animations */
 
@@ -147,3 +124,33 @@ h2{
 }
 
 /* Scale website */
+
+/* Change highlight text */
+/*** Works on common browsers ***/
+::selection {
+    background-color: #352e7e;
+    color: #008B8B;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: #352e7e;
+    color: #008B8B;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: #352e7e;
+    color: #008B8B;
+}
+
+::-ms-selection {
+    background-color: #352e7e;
+    color: #008B8B;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: #352e7e;
+    color: #008B8B;
+}
