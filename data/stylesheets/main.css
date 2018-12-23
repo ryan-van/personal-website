@@ -26,71 +26,92 @@ section {
   opacity: 1;
 }
 
-nav {
-    display:inline-block;
-    width:100%;
-    position:fixed;
-    z-index:1;
-    top:30px;
-    text-align: right;
-    font-size: 1vw;
-    font-family: 'Roboto';
-}
-
-ul {
-    display:inline-block;
-    margin-right:30px;
-    width:fit-content;
-    list-style:none;
-}
-
-ul li {
-    display:inline-block;
-    margin-right:30px;
-}
-
-ul li a {
-    color:#393d3d;
-    text-decoration:none;
-    opacity: .9;
-}
-
-ul li:hover > a {
-    color:#008B8B;
-    text-decoration:underline;
-    opacity: 1;
-}
-
 h1 {
     color:#393d3d;
     text-align: center;
-    margin-top:80px;
-    font-size: 4vw;
+    margin-top:40px;
+    font-size: 4.25vw;
     font-family: "Roboto";
 }
 h2 {
     color:#fff;
     text-align: center;
-    font-size: 2vw;
+    margin-top:80px;
+    font-size: 4.25vw;
+    font-family: "Roboto";
 }
 
+.overlay {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    opacity: 1;
+}
+
+.bg img {
+    z-index: -1;
+    width: 100%;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.text {
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 40vw;
+}
 /* images */
 .picture img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    vertical-align: middle;
+    padding: 1vw;
+    width: 40vw;
 }
 
-.contactIcon {
+.row {
+    position: relative;
+    left: -50%;
+    /* outline: 2px dashed blue; */
+}
+
+.icons {
+    position: relative;
     display: inline-block;
-    width: 3%;
 }
 
-#icons{
-    text-align: center;
-    padding-top: 30%;
+.icons img {
+    width: 3vw;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
 }
+
+.icon {
+    opacity: 1;
+    z-index: 1;
+}
+
+.icon-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3vw;
+    opacity: 0;
+    z-index: 2;
+}
+
+.icon-hover:hover {
+    opacity: 1;
+    z-index: 2;
+}
+
 
 /* The following section is dedicated to animations */
 
@@ -153,4 +174,61 @@ h2 {
 ::-webkit-selection {
     background-color: #352e7e;
     color: #008B8B;
+}
+
+/*** Scroll Bar ***/
+/* width */
+::-webkit-scrollbar {
+  width: .6%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b2b2b2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9e1f86;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9e1f86;
+}
+
+/* nav bar on top */
+#nav-fixed {
+    display: inline-block;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 2.5vh;
+    text-align: right;
+    font-size: 1vw;
+    font-family: 'Roboto';
+}
+
+#nav-fixed ul {
+    display:inline-block;
+    margin-right:30px;
+    width:fit-content;
+    list-style:none;
+}
+
+#nav-fixed ul li {
+    display:inline-block;
+    margin-right:30px;
+}
+
+#nav-fixed ul li a {
+    color: #393d3d;
+    text-decoration: none;
+    -moz-transition: color .35s ease;
+    -o-transition: color .35s ease;
+    -webkit-transition: color .35s ease;
+}
+
+#nav-fixed ul li:hover > a {
+    color: #9e1f86;
 }
