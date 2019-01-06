@@ -3,9 +3,14 @@
     padding:0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
   opacity: 1;
   transition: 4s opacity;
+  height: 100%;
 }
 
 body.fade {
@@ -29,16 +34,23 @@ section {
 h1 {
     color:#393d3d;
     text-align: center;
-    margin-top:40px;
+    margin-top:12vh;
     font-size: 4.25vw;
     font-family: "Roboto";
 }
+
 h2 {
     color:#fff;
+    mix-blend-mode: difference;
     text-align: center;
     margin-top:80px;
     font-size: 4.25vw;
     font-family: "Roboto";
+}
+
+h3 {
+    padding: 5vh;
+    font-size: 1.25vw;
 }
 
 .overlay {
@@ -48,10 +60,39 @@ h2 {
     opacity: 1;
 }
 
-.bg img {
+/* The hero image */
+.bg {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/deer_lowsize.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.bg2 {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* .bg img {
     z-index: -1;
     width: 100%;
 }
+
+.bg2 {
+    height: 50vh;
+} */
 
 .centered {
     display: flex;
@@ -61,15 +102,45 @@ h2 {
 }
 
 .text {
-    font-size: 1.5vw;
-    padding: 1vw;
-    width: 40vw;
+    font-size: 3vh;
+    padding: .5vh;
+    height: 40vh;
+    width: 30vw;
+    /* outline: 2px dashed black; */
+    text-align: center;
 }
+
+.text-hobbies {
+    font-size: 3vh;
+    height: 40vh;
+    width: 18vw;
+    /* outline: 2px dashed black; */
+    text-align: center;
+}
+
+.text-contact {
+    font-size: 3vh;
+    padding: .5vh;
+    height: 30vh;
+    width: 30vw;
+    /* outline: 2px dashed black; */
+    text-align: center;
+}
+
 /* images */
 .picture img {
     vertical-align: middle;
     padding: 1vw;
-    width: 40vw;
+    /* width: 40vw; */
+    height: 40vh;
+}
+
+.picture-small img {
+    vertical-align: middle;
+    padding: 1vw;
+    margin-left: 1vw;
+    /* width: 40vw; */
+    height: 30vh;
 }
 
 .row {
@@ -120,21 +191,12 @@ h2 {
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
-    /* make things invisible upon start */
 	opacity:0;
 
-    /*
-    call our keyframe named fadeIn,
-    use animattion ease-in and repeat it only 1 time
-    */
 	-webkit-animation:fadeIn ease-in 1;
 	-moz-animation:fadeIn ease-in 1;
 	animation:fadeIn ease-in 1;
 
-    /*
-    this makes sure that after animation is done
-    we remain at the last keyframe value (opacity: 1)
-    */
 	-webkit-animation-fill-mode:forwards;
 	-moz-animation-fill-mode:forwards;
 	animation-fill-mode:forwards;

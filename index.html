@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 
+<!--
+TODO:
+Random Icon change at page load (using cats)
+Mobile website
+JavaScript Page detection and image transition
+what to put in contact?
+Project page slider effect for different projects (slideshow)
+hobbies (slideshow)
+Title Screen name + opacity change + visible words
+-->
+
 <html>
     <head>
         <title>Ryan Van</title>
@@ -7,6 +18,7 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel="icon" href="data/images/cat_icon.ico"
         <meta content='width=device-width, initial-scale=1' name='viewport'/>
+        <meta name="theme-color" content="#c7d8d8">
     </head>
 
     <body>
@@ -14,18 +26,26 @@
             <ul>
                 <li><a href='#about'> <strong>About</strong> </a></li>
                 <li><a href='#projects'> <strong>Projects</strong> </a></li>
-                <li><a href='#resume'> <strong>Resume</strong> </a></li>
+                <li><a href='#hobbies'> <strong>Hobbies</strong> </a></li>
                 <li><a href='#contact'> <strong>Contact</strong> </a></li>
             </ul>
         </nav>
 
         <section id='open'>
-            <!-- <div id='bg'></div> -->
-
             <div class='bg'>
-                <h2 class='overlay fade-in'>WEBSITE UNDER CONSTRUCTION</h2>
-                <img alt='bg' src='data/images/deer_resize.jpg'>
+                <div class='bg2'>
+                    <h2 class='fade-in'>Ryan Van</h2>
+                    <h3 class='fade-in'>I like to code</h3>
+                </div>
             </div>
+
+            <!-- <div class='bg'>
+                <h2 class='overlay fade-in'>Ryan Van</h2>
+                <p>I like to code</p>
+                <div class='bg2'>
+                    <img alt='bg' src='data/images/deer_resize.jpg'>
+                </div>
+            </div> -->
         </section>
 
         <section id='about'>
@@ -36,23 +56,59 @@
         			<img title='Polly' alt='Profile Picture' src='data/images/cat.jpg'/>
                 </div>
 
-                <div class='text'>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <div class='text fade-in'>
+                    Hi, I'm Ryan. This is my cat Polly, which is being used as a temporary holder for my own image! </br>
+                    I'm currently a Computer Science Major at Berkeley, and love to code. I have experience in: Java, Python, R, SQLite, HTML, CSS, LaTeX, and the frameworks: PyTorch, TensorFlow, NumPy.
                 </div>
             </div>
 
 		</section>
 
 		<section id='projects'>
-			<h1>Projects</h1>
+			<h1>projects</h1>
+
+            <div class='centered'>
+                <div class='text fade-in'>
+                    Projects to be added!
+                </div>
+            </div>
+
 		</section>
 
-		<section id='resume'>
-			<h1>Resume</h1>
+		<section id='hobbies'>
+			<h1>hobbies</h1>
+
+            <div class='centered'>
+                <div class='text-hobbies fade-in'>
+                    computers
+                    <div class='picture-small fade-in'>
+                        <img title='computer' alt='my personal build' src='data/images/computer/1.jpg'/>
+                    </div>
+                </div>
+                <div class='text-hobbies fade-in'>
+                    origami
+                    <div class='picture-small fade-in'>
+                        <img title='origami' alt='origami dragon' src='data/images/origami/1.jpg'/>
+                    </div>
+                </div>
+                <div class='text-hobbies fade-in'>
+                    flowers
+                    <div class='picture-small fade-in'>
+                        <img title='Flower' alt='Flower' src='data/images/flowers/32.jpg'/>
+                    </div>
+                </div>
+            </div>
+            <!-- origami, pc building, walking? -->
 		</section>
 
 		<section id='contact'>
-			<h1>Contact</h1>
+			<h1>contact</h1>
+
+            <div class='centered'>
+                <div class=text-contact fade-in>
+                    Here are some of my social media, feel free to contact me whenever!
+                </div>
+            </div>
 
             <div style="position: absolute; left: 50%; bottom: 20%;">
                 <div class="row">
