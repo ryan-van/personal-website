@@ -241,7 +241,7 @@ h3 {
 /*** Scroll Bar ***/
 /* width */
 ::-webkit-scrollbar {
-  width: .8%;
+  width: .6%;
 }
 
 /* Track */
