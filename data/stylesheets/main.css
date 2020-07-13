@@ -34,8 +34,8 @@ section {
 h1 {
     color:#393d3d;
     text-align: center;
-    margin-top:12vh;
-    font-size: 4.25vw;
+    margin-top:7vh;
+    font-size: 5vw;
     font-family: "Roboto";
 }
 
@@ -44,13 +44,15 @@ h2 {
     mix-blend-mode: difference;
     text-align: center;
     margin-top:80px;
-    font-size: 4.25vw;
+    font-size: 10vw;
     font-family: "Roboto";
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h3 {
     padding: 5vh;
-    font-size: 1.25vw;
+    font-size: 5vw;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .overlay {
@@ -102,7 +104,8 @@ h3 {
 }
 
 .text {
-    font-size: 3vh;
+    /*font-size: 3vh;*/
+    font-size: 1.5vw;
     padding: .5vh;
     /* height: 40vh; */
     width: 30vw;
@@ -113,7 +116,8 @@ h3 {
 .text-hobbies {
     font-size: 3vh;
     /* height: 40vh; */
-    width: 18vw;
+    max-width: 100%;
+    height: auto;
     /* outline: 2px dashed black; */
     text-align: center;
 }
@@ -130,17 +134,18 @@ h3 {
 /* images */
 .picture img {
     vertical-align: middle;
-    padding: 1vw;
-    /* width: 40vw; */
-    height: 40vh;
+    padding-right: 5vw;
+    width: 25vw;
+    /* max-width: 70%; */
+    /*height: 40vh;*/
 }
 
 .picture-small img {
     vertical-align: middle;
     padding: 1vw;
     margin-left: 1vw;
-    /* width: 40vw; */
-    height: 30vh;
+    width: 28vw;
+    /* height: 30vh; */
 }
 
 .row {
@@ -155,7 +160,8 @@ h3 {
 }
 
 .icons img {
-    width: 3vw;
+    width: 6vw;
+    padding: 1vw;
     display: inline-block;
     vertical-align: bottom;
     -webkit-transition: all .35s ease;
@@ -173,7 +179,7 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 3vw;
+    width: 6vw;
     opacity: 0;
     z-index: 2;
 }
@@ -204,6 +210,22 @@ h3 {
 	-webkit-animation-duration:.7s;
 	-moz-animation-duration:.7s;
 	animation-duration:.7s;
+}
+
+.slow-fade-in {
+    opacity:0;
+
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1.75s;
+	-moz-animation-duration:1.75s;
+	animation-duration:1.75s;
 }
 
 /* Scale website */
@@ -267,7 +289,7 @@ h3 {
     z-index: 1;
     top: 2.5vh;
     text-align: right;
-    font-size: 1vw;
+    font-size: 1.25vw;
     font-family: 'Roboto';
 }
 
