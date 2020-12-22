@@ -20,8 +20,16 @@ time, mark, audio, video {
 
 
 #particles-js{
+  /* width: 500px;
+  height: 1080px; */
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  /* width: 100%; */
+  text-align: center;
+  transform: translate(-50%, -50%);
   background-color: #ffffff00;
   background-image: url('');
   background-size: cover;
@@ -420,9 +428,6 @@ figcaption a:hover {
 /* Responsive */
 
 @media (min-width: 500px) {
-    #particles-js{
-      width: 250%;
-    }
 
     h1 {
         font-size: 100px;
@@ -463,10 +468,6 @@ figcaption a:hover {
 }
 
 @media (min-width: 750px) {
-    #particles-js{
-      width: 225%;
-    }
-
     h1 {
         font-size: 130px;
     }
@@ -514,11 +515,7 @@ figcaption a:hover {
 
 }
 
-@media (min-width: 1000px) {
-    #particles-js{
-      width: 200%;
-    }
-    
+@media (min-width: 1000px) {   
     .project-items {
       height: 500px;
     }
@@ -557,26 +554,66 @@ figcaption a:hover {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 500px) and (min-height: 500px) {
   #particles-js{
-    width: 175%;
+    width: 500px;
+    height: 500px;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 800px) and (min-height: 800px) {
   #particles-js{
-    width: 150%;
+    width: 1900px;
+    height: 1000px;
   }
 }
 
-@media (min-width: 1600px) {
-  #particles-js{
-    width: 125%;
-  }
-}
+@media (min-height: 300px) { #particles-js{ height: 300px; } }
+@media (min-height: 400px) { #particles-js{ height: 400px; } }
+@media (min-height: 500px) { #particles-js{ height: 500px; } }
+@media (min-height: 600px) { #particles-js{ height: 600px; } }
+@media (min-height: 700px) { #particles-js{ height: 700px; } }
+@media (min-height: 800px) { #particles-js{ height: 800px; } }
+@media (min-height: 900px) { #particles-js{ height: 900px; } }
+@media (min-height: 1000px) { #particles-js{ height: 1000px; } }
+@media (min-height: 1100px) { #particles-js{ height: 1100px; } }
+@media (min-height: 1200px) { #particles-js{ height: 1200px; } }
+@media (min-height: 1300px) { #particles-js{ height: 1300px; } }
+@media (min-height: 1400px) { #particles-js{ height: 1400px; } }
+@media (min-height: 1500px) { #particles-js{ height: 1500px; } }
+@media (min-height: 1600px) { #particles-js{ height: 1600px; } }
+@media (min-height: 1700px) { #particles-js{ height: 1700px; } }
+@media (min-height: 1800px) { #particles-js{ height: 1800px; } }
+@media (min-height: 1900px) { #particles-js{ height: 1900px; } }
+@media (min-height: 2000px) { #particles-js{ height: 2000px; } }
+@media (min-height: 2100px) { #particles-js{ height: 2100px; } }
+@media (min-height: 2200px) { #particles-js{ height: 2200px; } }
+@media (min-height: 2300px) { #particles-js{ height: 2300px; } }
+@media (min-height: 2400px) { #particles-js{ height: 2400px; } }
+@media (min-height: 2500px) { #particles-js{ height: 2500px; } }
+@media (min-height: 2600px) { #particles-js{ height: 2600px; } }
 
-@media (min-width: 1800px) {
-  #particles-js{
-    width: 100%;
-  }
-}
+@media (min-width: 300px) { #particles-js{ width: 300px; } }
+@media (min-width: 400px) { #particles-js{ width: 400px; } }
+@media (min-width: 500px) { #particles-js{ width: 500px; } }
+@media (min-width: 600px) { #particles-js{ width: 600px; } }
+@media (min-width: 700px) { #particles-js{ width: 700px; } }
+@media (min-width: 800px) { #particles-js{ width: 800px; } }
+@media (min-width: 900px) { #particles-js{ width: 900px; } }
+@media (min-width: 1000px) { #particles-js{ width: 1000px; } }
+@media (min-width: 1100px) { #particles-js{ width: 1100px; } }
+@media (min-width: 1200px) { #particles-js{ width: 1200px; } }
+@media (min-width: 1300px) { #particles-js{ width: 1300px; } }
+@media (min-width: 1400px) { #particles-js{ width: 1400px; } }
+@media (min-width: 1500px) { #particles-js{ width: 1500px; } }
+@media (min-width: 1600px) { #particles-js{ width: 1600px; } }
+@media (min-width: 1700px) { #particles-js{ width: 1700px; } }
+@media (min-width: 1800px) { #particles-js{ width: 1800px; } }
+@media (min-width: 1900px) { #particles-js{ width: 1900px; } }
+@media (min-width: 2000px) { #particles-js{ width: 2000px; } }
+@media (min-width: 2100px) { #particles-js{ width: 2100px; } }
+@media (min-width: 2200px) { #particles-js{ width: 2200px; } }
+@media (min-width: 2300px) { #particles-js{ width: 2300px; } }
+@media (min-width: 2400px) { #particles-js{ width: 2400px; } }
+@media (min-width: 2500px) { #particles-js{ width: 2500px; } }
+@media (min-width: 2600px) { #particles-js{ width: 2600px; } }
