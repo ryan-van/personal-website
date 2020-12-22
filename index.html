@@ -1,165 +1,211 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<!--
-TODO:
-Random Icon change at page load (using cats)
-Mobile website
-JavaScript Page detection and image transition
-what to put in contact?
-Project page slider effect for different projects (slideshow)
-hobbies (slideshow)
-Title Screen name + opacity change + visible words
--->
+<head>
+    <meta charset="UTF-8">
+    <title>Ryan Van</title>
+    <link rel="icon" href="assets/images/cat_icon.ico" />
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/scripts/jquery.js"></script>
+</head>
 
-<html>
-    <head>
-        <title>Ryan Van</title>
-        <link rel="stylesheet" href="data/stylesheets/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link rel="icon" href="data/images/cat_icon.ico"
-        <meta content='width=device-width, initial-scale=1' name='viewport'/>
-        <meta name="theme-color" content="#c7d8d8">
-    </head>
+<body>
 
-    <body>
-        <nav id="nav-fixed">
-            <ul>
-                <li><a href='#about'> <strong>About</strong> </a></li>
-                <li><a href='#workexperience'> <strong>Experience</strong> </a></li>
-                <li><a href='#hobbies'> <strong>Hobbies</strong> </a></li>
-                <li><a href='#contact'> <strong>Contact</strong> </a></li>
-            </ul>
-        </nav>
+<nav id="fixed-nav-bar">
+  <ul>
+    <li><a class="active link" href=#title>Home</a></li>
+    <li><a class="link" href=#about id="nav-about">About</a></li>
+    <li><a class="link" href=#projects>Projects</a></li>
+    <li><a class="link" href=#hobbies>Hobbies</a></li>
+    <li><a class="link" href=#contact>Contact</a></li>
+  </ul>
+</nav>
 
-        <section id='open'>
-            <div class='bg'>
-                <div class='bg2'>
-                    <h2 class='slow-fade-in'>Ryan Van</h2>
-                    <h3 class='slow-fade-in'>coding is fun</h3>
-                </div>
+<section id="title" class="page">
+  
+  <div id="particles-js"></div>
+  <script src="assets/scripts/particles.js"></script>
+  <script src="assets/scripts/app.js"></script>
+
+  <div class="centered-absolute">
+    <div class="title-box fill-back">
+      <h1>Ryan Van</h1>
+      <h3 class="border-text" id="title-desc">technology is fun!</h3>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="top-relative">
+      <h2>about</h2>
+  </div>
+  <div class="div-max-width">
+      <img class="border-img" src="assets/images/profile_pic.jpg" width="200px">
+      <p class="block-text">Hi! My name is Ryan Van, and I'm a Senior attending UC Berkeley studying computer science.</p>
+      <p class="block-text">I previously worked at Intel creating scripts to update SSD firmware. I also used Maching Learning to detect graphic driver anomalies. I also worked at Amazon creating IoT labs to introduce customers to AWS Services.</p>
+      <p class="block-text">I love PC building, keyboard building, and simply just messing around with software and playing around random technologies!</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="top-relative">
+      <h2>projects</h2>
+  </div>
+  <ul class="project-items div-max-width">
+      <li class="project">
+          <figure>
+              <div class="view">
+                <img alt="Picture Pending" src="assets/images/projects/awsiot.png"/>
+              </div>
+              <figcaption>
+                <p>AWS IoT Core, Lambda, SiteWise, ...</p>
+              </figcaption>
+          </figure>
+          <div class="project-title"><a href="https://github.com/ryan-van/AWS-IoT-Device-Simulator-Labs" target="_blank">AWS IoT Labs</a></div>
+      </li>
+      <li class="project">
+          <figure>
+              <div class="view">
+                <img alt="Picture Pending" src="assets/images/projects/tvshowsdashboard.png"/>
+              </div>
+              <figcaption>
+                <p>React, JavaScript, TMDB, Azure Analytics</p>
+              </figcaption>
+          </figure>
+          <div class="project-title"><a href="https://ucb-info-frontend-webarch.github.io/tv-shows-dashboard/" target="_blank">TV Shows Dashboard</a></div>
+      </li>
+      <li class="project">
+          <figure>
+              <div class="view">
+                <img alt="Picture Pending" src="assets/images/projects/survivegame.png"/>
+              </div>
+              <figcaption>
+                <p>Java</p>
+              </figcaption>
+          </figure>
+          <div class="project-title"><a href="https://github.com/ryan-van/SurviveGame" target="_blank">Survive Game</a></div>
+      </li>
+      <li class="project">
+          <figure>
+              <div class="view">
+                <img alt="Picture Pending" src="assets/images/projects/TranslateMe.jpg"/>
+              </div>
+              <figcaption>
+                <p>Java, AWS Translate</p>
+              </figcaption>
+          </figure>
+          <div class="project-title"><a href="https://github.com/ryan-van/TranslateMe" target="_blank">TranslateMe</a></div>
+      </li>
+      <li class="project">
+          <figure>
+              <div class="view">
+                <img alt="Picture Pending" src="assets/images/projects/NotetakingChatbot.jpg"/>
+              </div>
+              <figcaption>
+                <p>Python, Pandas</p>
+              </figcaption>
+          </figure>
+          <div class="project-title"><a href="https://github.com/ryan-van/Notetaking-Chatbot" target="_blank">Notetaking Chatbot</a></div>
+      </li>
+      <li class="project">
+          <figure>
+              <div class="view">
+                <img alt="Picture Pending" src="assets/images/projects/personalwebsite.png"/>
+              </div>
+              <figcaption>
+                <p>HTML, CSS, JavaScript</p>
+              </figcaption>
+          </figure>
+          <div class="project-title"><a href="https://github.com/ryan-van/ryan-van.github.io" target="_blank">Website</a></div>
+      </li>
+  </ul>
+</section>
+
+<section id="hobbies">
+  <div class="top-relative">
+      <h2>hobbies</h2>
+  </div>
+  <ul class="project-items div-max-width">
+    <li class="project">
+      <figure>
+          <div class="view">
+            <img alt="Picture Pending" src="assets/images/hobbies/origami.jpg"/>
+          </div>
+          <figcaption>
+            <p>Origami Dragon</p>
+          </figcaption>
+      </figure>
+      <div class="project-title">origami</div>
+    </li>
+    <li class="project">
+      <figure>
+          <div class="view">
+            <img alt="Picture Pending" src="assets/images/hobbies/computers.jpg"/>
+          </div>
+          <figcaption>
+            <p>Ryzen 2700x | 2070</p>
+          </figcaption>
+      </figure>
+      <div class="project-title">computers</div>
+    </li>
+    <li class="project">
+        <figure>
+            <div class="view">
+              <img alt="Picture Pending" src="assets/images/hobbies/southpaw.jpg"/>
             </div>
-
-            <!-- <div class='bg'>
-                <h2 class='overlay fade-in'>Ryan Van</h2>
-                <p>I like to code</p>
-                <div class='bg2'>
-                    <img alt='bg' src='data/images/deer_resize.jpg'>
-                </div>
-            </div> -->
-        </section>
-
-        <section id='about'>
-            <h1>about</h1>
-
-            <div class='centered'>
-                <div class='picture fade-in'>
-        			<img title='Ryan' alt='Profile Picture' src='data/images/profile_pic.jpg'/>
-                </div>
-
-                <div class='text fade-in'>
-                    I am a Junior attending UC Berkeley and studying computer science while looking to minoring in data science.
-                     I don't have a specific focus and am still exploring my options, but I specifically enjoy:
-                      data exploration, backend software, and computer architecture.
-                       I have an interest in PC building and am very integrated into keeping up to date with current technology trends.
-                        With this in mind, coding brings along a challenge that I love!
-                </div>
+            <figcaption>
+              <p>Southpaw75 with Zilents v2</p>
+            </figcaption>
+        </figure>
+        <div class="project-title">Mechanical Keyboards</div>
+    </li>
+    <li class="project">
+        <figure>
+            <div class="view">
+              <img alt="Picture Pending" src="assets/images/hobbies/nk65.jpg"/>
             </div>
+            <figcaption>
+              <p>NK65 Entry Edition with Holy Pandas</p>
+            </figcaption>
+        </figure>
+        <div class="project-title">Mechanical Keyboards</div>
+    </li>
+</ul>
+</section>
 
-		</section>
-
-		<!-- <section id='projects'>
-			<h1>projects</h1>
-
-            <div class='centered'>
-                <div class='text fade-in'>
-                    Projects to be added!
-                </div>
+<section id="contact">
+    <div class="top-relative">
+        <h2>contact</h2>
+    </div>
+    <div class="div-max-width">
+      <p class="block-text">Feel free to contact me on any of these platforms! ☺ I also started a blog where I showcase my opinions on 
+        <a href="http://randomtechtalkblog.wordpress.com/">random tech</a>!</p>
+    </div>
+    <div class="centered-absolute">
+        <div class = "icon-row">
+            <div class="icon-container">
+                <a href="https://github.com/ryan-van">
+                    <img class="icon" src="assets/images/github.png"/>
+                </a>
+                <a href="https://github.com/ryan-van" class="overlap">
+                    <img class="icon-hover" src="assets/images/github-hover.png"/>
+                </a>
             </div>
-
-		</section> -->
-
-        <section id='workexperience'>
-            <h1>experience</h1>
-
-            <div class='centered'>
-                <div class='text-hobbies fade-in'>
-                    intel
-                    <div class='picture-small fade-in'>
-                        <img title='intel' alt='undergrad technical intern' src='data/images/experience/intel.png'/>
-                    </div>
-                    undergrad technical intern
-                </div>
-                <div class='text-hobbies fade-in'>
-                    amazon
-                    <div class='picture-small fade-in'>
-                        <img title='amazon' alt='solution architect intern' src='data/images/experience/aws.png'/>
-                    </div>
-                    solution architect intern
-                </div>
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/ryan-van">
+                    <img class="icon" src="assets/images/linkedin.png"/>
+                </a>
+                <a href="https://www.linkedin.com/in/ryan-van" class="overlap">
+                    <img class="icon-hover" src="assets/images/linkedin-hover.png"/>
+                </a>
             </div>
+        </div>
+    </div>
+</section>
 
-        </section>
+<script src="assets/scripts/main.js"></script>
 
-		<section id='hobbies'>
-			<h1>hobbies</h1>
-
-            <div class='centered'>
-                <div class='text-hobbies fade-in'>
-                    computers
-                    <div class='picture-small fade-in'>
-                        <img title='computer' alt='my personal build' src='data/images/computer/1.jpg'/>
-                    </div>
-                </div>
-                <div class='text-hobbies fade-in'>
-                    origami
-                    <div class='picture-small fade-in'>
-                        <img title='origami' alt='origami dragon' src='data/images/origami/1.jpg'/>
-                    </div>
-                </div>
-                <div class='text-hobbies fade-in'>
-                    keyboards
-                    <div class='picture-small fade-in'>
-                        <img title='switch' alt='zilents' src='data/images/keyboards/1.jpg'/>
-                    </div>
-                </div>
-            </div>
-            <!-- origami, pc building, walking? -->
-		</section>
-
-		<section id='contact'>
-			<h1>contact</h1>
-
-            <div class='centered'>
-                <div class=text-contact fade-in>
-                    Feel free to contact me on any of these platforms! ☺
-                </div>
-            </div>
-
-            <div style="position: absolute; left: 50%; bottom: 20%;">
-                <div class="row">
-                    <div class="icons">
-                        <a href="https://github.com/ryan-van" target="_blank">
-                            <img title='GitHub' class="icon" alt='GitHub' src='data/images/github.png'/>
-                        </a>
-                        <a href="https://github.com/ryan-van" target="_blank">
-                            <img title='GitHub' class="icon-hover" alt='GitHub' src='data/images/github-hover.png'/>
-                        </a>
-                    </div>
-
-                    <div class="icons">
-                        <a href="https://www.linkedin.com/in/ryan-van/" target="_blank">
-                            <img title='LinkedIn' class="icon" alt='LinkedIn' src='data/images/linkedin.png'/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ryan-van/" class="overlap" target="_blank">
-                            <img title='LinkedIn' class="icon-hover" alt='LinkedIn' src='data/images/linkedin-hover.png'/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-		</section>
-
-
-        <!-- <script src="data/scipts/jquery-3.3.1.min.js"></script> -->
-        <!-- <script src="data/scipts/myscripts.js"></script> -->
-	</body>
+</body>
 </html>
