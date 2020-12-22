@@ -19,6 +19,8 @@ time, mark, audio, video {
 }
 
 
+* {box-sizing:border-box}
+
 #particles-js{
   /* width: 500px;
   height: 1080px; */
@@ -149,7 +151,7 @@ figure {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b1c4b6;
+  background: #7b9481;
 }
 
 /* navbar */
@@ -373,8 +375,6 @@ figcaption a:hover {
 #contact {
     margin: 0;
     text-align: center;
-    /*background-image: url('../images/background2.png');
-    background-size: cover;*/
 }
 
 #contact-title {
